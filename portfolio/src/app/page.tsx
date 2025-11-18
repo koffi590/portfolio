@@ -48,23 +48,23 @@ export default function Home() {
           />
         </motion.div>
         <motion.div
-  initial={{ opacity: 0, scale: 0.85 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.6 }}
-  className="relative flex items-center justify-center mb-8"
->
-  {/* Glow néon */}
-  <div className="absolute rounded-full bg-[#26d48c] opacity-60 blur-2xl w-56 h-56 animate-pulse"></div>
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="relative flex items-center justify-center mb-8"
+        >
+          {/* Glow néon */}
+          <div className="absolute rounded-full bg-[#26d48c] opacity-60 blur-2xl w-56 h-56 animate-pulse"></div>
 
-  {/* Cercle avec padding */}
-  <div className="w-44 h-44 rounded-full p-2 bg-white dark:bg-black border-4 border-[#26d48c] shadow-xl relative z-10 flex items-center justify-center">
-    <img
-      src="/photo.jpg"
-      alt="Photo de profil"
-      className="w-full h-full rounded-full object-cover"
-    />
-  </div>
-</motion.div>
+          {/* Cercle avec padding */}
+          <div className="w-44 h-44 rounded-full p-2 bg-white dark:bg-black border-4 border-[#26d48c] shadow-xl relative z-10 flex items-center justify-center">
+            <img
+              src="/photo.jpg"
+              alt="Photo de profil"
+              className="w-full h-full rounded-full object-cover"
+            />
+          </div>
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
