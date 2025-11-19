@@ -74,7 +74,7 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/Design\ sans\ titre.jpg);
+    background-image: url(Image/banniere.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,8 +316,36 @@ section{
     border-radius: 3px;
 }
 
+
+/* DESIGN */
+.skills .content .col-right .bar .figma::before{
+    width: 75%;
+    background-color: #a259ff;
+}
+.skills .content .col-right .bar .canva::before{
+    width: 85%;
+    background-color: #00c4cc;
+}
+
+.skills .content .col-right .bar .tailwind::before{
+    width: 85%;
+    background-color: #00c4cc;
+}
+
+
+
+/* FRONTEND */
+.skills .content .col-right .bar .react::before{
+    width: 45%;
+    background-color: #61dafb;
+}
+.skills .content .col-right .bar .vue::before{
+    width: 70%;
+    background-color: #048104;
+}
+
 .skills .content .col-right .bar .html::before{
-    width: 95%;
+    width: 90%;
     background-color: #e45126;
 }
 
@@ -330,15 +358,48 @@ section{
     width: 80%;
     background-color: #e3a324;
 }
-
-.skills .content .col-right .bar .python::before{
-    width: 85%;
-    background-color: blue;
+/* BACKEND */
+.skills .content .col-right .bar .laravel::before{
+    width: 60%;
+    background-color: #ff2d20;
+}
+.skills .content .col-right .bar .node::before{
+    width: 55%;
+    background-color: #3c873a;
 }
 
 .skills .content .col-right .bar .php::before{
     width: 65%;
     background-color: #6d7eb8;
+}
+
+.skills .content .col-right .bar .golang::before{
+    width: 50%;
+    background-color: #00c4cc;
+}
+
+/* DATABASE */
+.skills .content .col-right .bar .mysql::before{
+    width: 80%;
+    background-color: #00758f;
+}
+.skills .content .col-right .bar .mongodb::before{
+    width: 70%;
+    background-color: #4db33d;
+}
+
+.skills .content .col-right .bar .sqlite::before{
+    width: 75%;
+    background-color: #666666;
+}
+/* MOBILE */
+.skills .content .col-right .bar .flutter::before{
+    width: 50%;
+    background-color: #02569b;
+}
+.skills .content .col-right .bar .dart::before{
+    width: 40%;
+    background-color: #0175c2;
 }
 
 /* Services */
