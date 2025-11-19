@@ -418,56 +418,65 @@ section{
     text-align: center;
 }
 
-.services .content .card{
-    background-color: #fff;
-    width: 340px;
-    margin: 10px;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(1 1 1/15%);
-    transition: 0.3s linear;
-}
-
-.services .content .card .service-icon{
-    color: #3a6cf4;
-    font-size: 8rem;
-    text-align: center;
-    transition: 0.3s linear;
-}
-
-.services .content .card .info{
-    text-align: center;
-}
-
-.services .content .card .info h3{
-    color: #3a6cf4;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 10px;
-    transition: 0.3s linear;
-    
-}
-
-.services .content .card:hover{
-    background-color: #3a6cf4;
-    color: white;
-}
-
-.services .content .card:hover .service-icon,
-.services .content .card:hover .info h3
-{
-    transform: translateY(-10px);
-    color: white;
-}
-
 /* Work */
+/* ----- WORK SECTION HOVER EFFECT ----- */
+
+.work .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work .card-img img {
+    width: 100%;
+    height: 100%;
+    transition: transform .4s ease;
+}
+
+.work .card:hover .card-img img {
+    transform: scale(1.1);
+}
+
+/* --- Overlay --- */
+.work .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.work .card:hover::before {
+    opacity: 1;
+}
+
+/* --- Button --- */
+.work .card .view-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background: #3a6cf4;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity .4s ease, transform .3s ease;
+}
+
+.work .card:hover .view-btn {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
 
 .work{
-    background-color: #000016;
+    background-color: #ffffff;
 }
 
 .work .content{
@@ -508,7 +517,9 @@ section{
 
 
 /* Contact */
-
+.contact {
+    background: #000016;
+}
 .contact .content{
     display: flex;
     justify-content: center;
