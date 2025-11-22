@@ -88,13 +88,6 @@
         >
         <div class="media-icons">
           <a
-            href="#"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="1200"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
             href="https://www.linkedin.com/in/joelle-koffi-16154617a/"
             data-aos="fade-in"
             data-aos-duration="1000"
@@ -106,9 +99,8 @@
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="1400"
-          >
-          <i class="fas fa-envelope"></i>
-          </a>
+            ><i class="fas fa-envelope"></i
+          ></a>
 
           <a
             href="https://github.com/koffi590"
@@ -534,7 +526,7 @@
             </div>
             <div class="info">
               <h3>Email</h3>
-              <span>joellekoffi590@gmail.com</span>
+              <a href="https://github.com/koffi590" style="text-decoration: none;"><span>joellekoffi590@gmail.com</span></a>
             </div>
           </div>
           <div class="card reveal">
@@ -570,7 +562,9 @@
               ></textarea>
             </div>
             <div class="input-box">
-              <button class="send-btn" name="envoyer" type="submit">Envoyer</button>
+              <button class="send-btn" name="envoyer" type="submit">
+                Envoyer
+              </button>
             </div>
           </div>
         </div>
@@ -581,7 +575,7 @@
     <footer class="footer">
       <span class="footer-title">Joelle KOFFI</span>
       <p>
-        Copyright @2025 <a href="#">Mon Portfolio</a>. Tous droits reservés.
+        Copyright @2025 <a href="#main">Mon Portfolio</a>. Tous droits reservés.
       </p>
     </footer>
 
@@ -605,19 +599,20 @@
       const navigation = document.querySelector(".navigation");
       const navigationItems = document.querySelector(".navigation a");
 
-      menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
-      });
-
       // Navigation Effects
       window.addEventListener("scroll", function () {
         const header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
 
-      navigationItems.forEach((navigationItem) => {
-        navigationItem.addEventListener("click", () => {
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+
+      // Fermer le menu quand on clique sur un lien
+      document.querySelectorAll(".navigation a").forEach((link) => {
+        link.addEventListener("click", () => {
           menuBtn.classList.remove("active");
           navigation.classList.remove("active");
         });
