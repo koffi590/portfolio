@@ -1,6 +1,3 @@
-# 🌟 Complete Portfolio Website Using HTML & CSS 🌟  
-A fully responsive and modern portfolio website built with only HTML and CSS. Perfect for showcasing your projects and skills!  
+# 🌟 Site web portfolio avec HTML CSS et javascript 🌟  
+Un site web portfolio moderne et entièrement réactif, construit uniquement avec HTML, CSS et Javascript. Idéal pour présenter vos projets et vos compétences ! 
 
-## 🚀 DEMO  
-🔗 [Live Demo]: https://www.procoder09.com/yt-Projects/portfolio-projects/Complete-Adam-Portfolio/
-🔗 [Download ]:
