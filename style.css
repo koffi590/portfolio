@@ -402,7 +402,7 @@ section {
 }
 
 .skills .content .col-right .bar .node::before {
-    width: 55%;
+    width: 35%;
     background-color: #3c873a;
 }
 
