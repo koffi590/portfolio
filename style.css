@@ -14,13 +14,13 @@ body {
 }
 
 header {
-    /* z-index: 889; */
+    z-index: 889;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.1);
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 200px;
+    /* padding: 15px 200px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@ header {
 
 header.sticky {
     background-color: #3a6cf4;
-    padding: 10px 200px;
+    /* padding: 10px 200px; */
 }
 
 header .brand {
