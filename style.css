@@ -891,10 +891,10 @@ section {
     transition: all 0.3s ease;
 }
 
-@media (max-width:600px) {
-    header {
+@media (max-width:700px) {
+    /* header {
         width: 85%;
-    }
+    } */
     /* .content {
         display: none;
     } */
