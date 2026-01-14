@@ -893,9 +893,9 @@ section {
 
 @media (max-width:600px) {
     header {
-        width: 100%;
+        width: 90%;
     }
-    .content {
+    /* .content {
         display: none;
-    }
+    } */
 }
