@@ -898,4 +898,10 @@ section {
     /* .content {
         display: none;
     } */
+
+    body {
+    width: 97%;
+    height: auto;
+    overflow-x: hidden;
+}
 }
