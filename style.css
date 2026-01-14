@@ -32,6 +32,7 @@ header.sticky {
     /* padding: 10px 200px; */
 }
 
+
 header .brand {
     color: white;
     font-size: 1.8em;
@@ -718,6 +719,7 @@ section {
     cursor: pointer;
     transition: 0.5s ease;
 }
+
 .send-btn {
     padding: 10px;
     border-radius: 5px;
@@ -892,16 +894,26 @@ section {
 }
 
 @media (max-width:700px) {
+
     /* header {
         width: 85%;
     } */
+    header {
+        padding: 12px 20px;
+        width: 85%;
+    }
+
+    header.sticky {
+        padding: 10px 20px;
+    }
+
     /* .content {
         display: none;
     } */
 
     body {
-    width: 97%;
-    height: auto;
-    overflow-x: hidden;
-}
+        width: 97%;
+        height: auto;
+        overflow-x: hidden;
+    }
 }
